@@ -682,6 +682,7 @@ ul li a:hover {
 .hero {
   display: flex;
   flex-direction: row;
+  gap: 40px;
 }
 
 .video {
@@ -1111,6 +1112,11 @@ footer {
 }
 .footer-logo .container {
   display: flex;
+  justify-content: space-between;
+  gap: 300px;
+}
+.footer-logo .container {
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -1126,7 +1132,6 @@ footer {
   flex: none;
   order: 0;
   flex-grow: 0;
-  padding-right: 500px;
   padding-top: 25px;
   padding-bottom: 19px;
 }

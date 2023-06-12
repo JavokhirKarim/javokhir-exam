@@ -166,7 +166,6 @@
   .footer-content {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     justify-content: space-between;
     padding-left: 95px;
   }
@@ -211,5 +210,10 @@
   .footer-logo .container {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  .footer-logo .container p {
+    display: inline-block;
   }
 }
