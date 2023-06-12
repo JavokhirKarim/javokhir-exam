@@ -1,0 +1,220 @@
+@import url("style.css");
+
+@media (max-width: 480px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+  }
+  nav {
+    position: relative;
+  }
+  .srevice-card input {
+    width: 220px;
+  }
+
+  nav box-icon {
+    display: block;
+    position: absolute;
+    right: 24px;
+    top: 1px;
+  }
+  nav ul {
+    background-color: whitesmoke;
+    display: none;
+    height: 80vh;
+    text-align: center;
+    gap: 30px;
+    padding-top: 60px;
+  }
+  nav ul li a {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #737373;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+  }
+  form input {
+    border: none;
+    width: 200px;
+    /* padding-left: 3px; */
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    color: #737373;
+  }
+  .showmenu {
+    display: block;
+  }
+  nav ul li {
+    padding: 2% 0;
+    display: block;
+  }
+  .home-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-content {
+    padding-top: 900px;
+  }
+  .advice-cards {
+    padding-top: 40px;
+    padding-bottom: 101px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .about-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .business-content .video {
+    padding-left: 0px;
+    padding-top: 100px;
+    width: 333px;
+    height: 442px;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .imgs {
+    margin-top: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+  }
+  .contact-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 208px;
+  }
+
+  .service-card {
+    margin-top: 70.1px;
+    margin-bottom: 85px;
+    display: flex;
+    flex-direction: column;
+    background: #16697a;
+    border-radius: 2px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    max-width: 100%;
+    height: 414px;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+  }
+  .btn-contact {
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #ffffff;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    text-decoration: none;
+    padding: 15px 40px;
+    margin-top: px;
+    width: 163px;
+    height: 58px;
+    background: #ffa62b;
+    border-radius: 5px;
+  }
+  .btn-video {
+    position: absolute;
+    left: 150px;
+    top: 4650px;
+    z-index: 1;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-top: 35px;
+  }
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  footer {
+    height: 1200px;
+  }
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .text-content {
+    display: flex;
+    justify-content: center;
+    padding-top: 51px;
+  }
+  .video {
+    position: relative;
+    padding-left: 196px;
+    padding-bottom: 157px;
+  }
+  .home-content h1 {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 80px;
+    letter-spacing: 0.2px;
+    color: #252b42;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  .home-content p {
+    text-align: start;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    color: #737373;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    padding-top: 5px;
+  }
+  .home {
+    background: url(./img/backround222.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 710px;
+  }
+}
