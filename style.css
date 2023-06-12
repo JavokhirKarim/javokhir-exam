@@ -1,93 +1,106 @@
+.buttons,
+nav {
+  flex-direction: row;
+}
+#logos,
+.logo,
+ul li {
+  display: inline-block;
+}
+.btn1:hover,
+nav,
+ul {
+  display: flex;
+}
+ul li a,
+ul li a:hover {
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  font-size: 14px;
+  text-align: center;
+  order: 0;
+  text-decoration: none;
+}
+.about-card h2,
+.home-content h1,
+body {
+  font-family: Montserrat, sans-serif;
+}
+.btn1,
+.btn2 {
+  color: #00a0c1;
+}
+.card h2,
+.card p,
+.card-content img {
+  padding-left: 40px;
+}
+form button,
+form input,
+textarea {
+  font-weight: 400;
+}
+.btn-contact,
+.contact-card a,
+.footer a,
+ul li a,
+ul li a:hover {
+  text-decoration: none;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-
-/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap"); */
-
 .container {
   max-width: 1090px;
   padding: 0 20px;
   margin: 0 auto;
 }
-.logo {
-  display: inline-block;
-}
 .home {
-  background: url(./img/backround.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: url(./img/backround.png) 0 0 / cover no-repeat;
   height: 710px;
 }
-
 body {
-  font-family: "Montserrat", sans-serif;
   font-style: normal;
 }
-
 header {
   position: fixed;
   left: 0;
   right: 0;
   width: 100%;
-  background-color: rgba(255, 255, 255, 1);
-  box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+  background-color: #fff;
+  box-shadow: 0 13px 19px rgba(0, 0, 0, 0.07);
   z-index: 50;
 }
-
 nav {
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  /* align-items: center; */
   padding: 30px;
   transition: 0.7s;
 }
 .navbar-shrink {
   padding: 20px 0;
 }
-
 nav box-icon {
   display: none;
 }
-
 ul li {
   list-style: none;
-  display: inline-block;
   margin-left: 25px;
 }
-ul {
-  display: flex;
-  /* text-align: end; */
-}
 ul li a {
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 24px;
-  text-align: center;
-  letter-spacing: 0.2px;
   color: #737373;
   flex: none;
-  order: 0;
   flex-grow: 0;
 }
 ul li a:hover {
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 24px;
-  text-align: center;
-  letter-spacing: 0.2px;
-  color: #000000;
+  color: #000;
   flex: none;
-  order: 0;
   flex-grow: 0;
   transition: 0.6s;
 }
-
 .home-content {
   padding-top: 150px;
   background-repeat: no-repeat;
@@ -96,7 +109,6 @@ ul li a:hover {
   max-width: 100%;
 }
 .home-content h1 {
-  font-family: "Montserrat", sans-serif;
   font-weight: 800;
   font-size: 58px;
   line-height: 80px;
@@ -106,46 +118,39 @@ ul li a:hover {
   order: 0;
   flex-grow: 0;
 }
-
+.btn1:hover,
+.home-content p {
+  font-family: Montserrat;
+  font-style: normal;
+  letter-spacing: 0.2px;
+}
 .home-content p {
   text-align: start;
-  font-family: "Montserrat";
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 30px;
-  letter-spacing: 0.2px;
   color: #737373;
   flex: none;
   order: 1;
   flex-grow: 0;
   padding-top: 35px;
 }
-
 .btn1:hover {
-  display: flex;
   align-items: center;
   padding: 10px 36px;
   gap: 10px;
-
   width: 185px;
   height: 48px;
   background: #ffa62b;
   border-radius: 37px;
-
   flex: none;
   order: 0;
   flex-grow: 0;
-  font-family: "Montserrat";
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 28px;
-
   text-align: center;
-  letter-spacing: 0.2px;
-
-  color: #ffffff;
+  color: #fff;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -153,71 +158,41 @@ ul li a:hover {
   cursor: pointer;
   transition: 0.6s;
 }
-.btn1 {
-  display: flex;
+.btn1,
+.btn2:hover {
   align-items: center;
+  border-radius: 37px;
+  order: 0;
   padding: 10px 36px;
-  gap: 10px;
-
   width: 185px;
   height: 48px;
-  background: transparent;
-  border-radius: 37px;
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  font-family: "Montserrat";
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  cursor: pointer;
+  gap: 10px;
+  font-family: Montserrat;
   font-style: normal;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 28px;
-
   text-align: center;
-  letter-spacing: 0.2px;
-  color: #00a0c1;
+  display: flex;
+  line-height: 28px;
+}
+.btn1 {
+  background: 0 0;
   flex: none;
-  order: 0;
+  flex-grow: 0;
+  flex: none;
   flex-grow: 0;
   border: 1px solid #00a0c1;
-  cursor: pointer;
 }
 .btn2:hover {
-  display: flex;
-  align-items: center;
-  padding: 10px 36px;
-  gap: 10px;
-
-  width: 185px;
-  height: 48px;
-
-  border-radius: 37px;
-
   flex: none;
-  order: 0;
   flex-grow: 0;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 28px;
   background-color: #ffa62b;
-  /* identical to box height, or 200% */
-
-  text-align: center;
-  letter-spacing: 0.2px;
-
-  /* secondary-color-1 */
-
-  color: #ffffff;
-
-  /* Inside auto layout */
-
+  color: #fff;
   flex: none;
-  order: 0;
   flex-grow: 0;
   border: 0;
-  cursor: pointer;
   transition: 0.6s;
 }
 .btn2 {
@@ -228,164 +203,120 @@ ul li a:hover {
   background-color: transparent;
   width: 185px;
   height: 48px;
-
   border-radius: 37px;
-
   flex: none;
   order: 0;
   flex-grow: 0;
-  font-family: "Montserrat";
+  font-family: Montserrat;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 28px;
-  /* identical to box height, or 200% */
-
   text-align: center;
   letter-spacing: 0.2px;
-
-  /* secondary-color-1 */
-
-  color: #00a0c1;
-
-  /* Inside auto layout */
-
   flex: none;
   order: 0;
   flex-grow: 0;
   border: 1px solid #00a0c1;
   cursor: pointer;
 }
-
+.card,
+.card:hover {
+  width: 328px;
+  margin-top: 105px;
+  box-shadow: 0 13px 19px rgba(0, 0, 0, 0.07);
+  order: 0;
+}
 .buttons {
   display: flex;
-  flex-direction: row;
   gap: 10px;
   padding-top: 35px;
 }
-
 .home-cards {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-
 .card {
-  width: 328px;
   height: 210px;
-  background-color: #ffa62b;
-  margin-top: 105px;
-  background: #ffffff;
-  /* SHADOW */
-
-  box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
-
-  /* Inside auto layout */
-
+  background: #fff;
   flex: none;
-  order: 0;
   flex-grow: 0;
 }
 .card:hover {
-  width: 328px;
   height: 210px;
-  margin-top: 105px;
   background: #6baab7;
-  /* SHADOW */
-
-  box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
-
-  /* Inside auto layout */
-
   flex: none;
-  order: 0;
   flex-grow: 0;
-  color: #ffffff;
+  color: #fff;
   transition: 0.6s;
 }
-.card:hover h2 {
-  color: #ffffff;
-}
+.card:hover h2,
 .card:hover p {
-  color: #ffffff;
+  color: #fff;
 }
 .card-content img {
   padding-top: 40px;
-  padding-left: 40px;
 }
-
 .card h2 {
-  font-family: "Montserrat";
+  font-family: Montserrat;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
-  /* identical to box height, or 133% */
-
   letter-spacing: 0.1px;
   padding-top: 13px;
-  /* text-color */
-
   color: #252b42;
-
-  /* Inside auto layout */
-
   flex: none;
   order: 1;
   flex-grow: 0;
-  padding-left: 40px;
 }
-
+.about-content h2,
 .card p {
-  font-family: "Montserrat";
   font-style: normal;
+  letter-spacing: 0.2px;
+  flex: none;
+  font-family: Montserrat;
+}
+.card p {
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
-  /* or 143% */
   padding-top: 10px;
-  letter-spacing: 0.2px;
-
-  /* second-text-color */
-
   color: #737373;
-
-  /* Inside auto layout */
-
-  flex: none;
   order: 2;
   flex-grow: 0;
-  padding-left: 40px;
 }
-
+.about-card h2,
+.about-content h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 57px;
+  color: #252b42;
+}
 .about-content {
   padding-top: 300px;
 }
 .about-content h2 {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 57px;
-  letter-spacing: 0.2px;
-  color: #252b42;
-  flex: none;
   order: 0;
   flex-grow: 0;
   text-align: center;
 }
+.about-card h2,
+.about-content p {
+  font-style: normal;
+  letter-spacing: 0.2px;
+  order: 1;
+}
 .about-content p {
   padding-top: 10px;
-  font-family: "Montserrat";
-  font-style: normal;
+  font-family: Montserrat;
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
   text-align: center;
-  letter-spacing: 0.2px;
   color: #737373;
   flex: none;
-  order: 1;
   flex-grow: 0;
 }
 .about-cards {
@@ -396,135 +327,68 @@ ul li a:hover {
   padding-bottom: 80px;
   justify-content: space-around;
 }
-
-.about-card {
+.about-card,
+.about-card2,
+.about-card3,
+.about-card4 {
   text-align: center;
   width: 230px;
   height: 210px;
-  background: #ffffff;
+  background: #fff;
   flex: none;
   order: 0;
   flex-grow: 0;
 }
+.about-card2:hover,
+.about-card3:hover,
+.about-card4:hover,
 .about-card:hover {
   transition: 0.6s;
   text-align: center;
   width: 230px;
   height: 210px;
-  background: #ffffff;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background: #fff;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   flex: none;
   order: 0;
   flex-grow: 0;
 }
-.about-card2:hover {
-  transition: 0.6s;
-  text-align: center;
-  width: 230px;
-  height: 210px;
-  background: #ffffff;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+.contact-card:hover,
+.contact-card:hover a {
+  background-color: #252b42ff;
+  width: 328px;
+  height: 333px;
 }
-.about-card3:hover {
-  transition: 0.6s;
-  text-align: center;
-  width: 230px;
-  height: 210px;
-  background: #ffffff;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-.about-card4:hover {
-  transition: 0.6s;
-  text-align: center;
-  width: 230px;
-  height: 210px;
-  background: #ffffff;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-.about-card2 {
-  text-align: center;
-  width: 230px;
-  height: 210px;
-  background: #ffffff;
-  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-.about-card3 {
-  text-align: center;
-  width: 230px;
-  height: 210px;
-  background: #ffffff;
-  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-.about-card4 {
-  text-align: center;
-  width: 230px;
-  height: 210px;
-  background: #ffffff;
-  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-
 .about-card h2 {
   padding-top: 11.8px;
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: 700;
+  flex: none;
+  flex-grow: 0;
+}
+.about-card2 h2,
+.about-card3 h2 {
+  flex: none;
+  font-family: Montserrat, sans-serif;
   font-size: 40px;
   line-height: 57px;
   letter-spacing: 0.2px;
-  color: #252b42;
-  flex: none;
   order: 1;
-  flex-grow: 0;
+  font-style: normal;
+  font-weight: 700;
+  color: #252b42;
 }
 .about-card2 h2 {
   padding-top: 25px;
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 57px;
-  letter-spacing: 0.2px;
-  color: #252b42;
-  flex: none;
-  order: 1;
   flex-grow: 0;
 }
 .about-card3 h2 {
   padding-top: 9px;
   padding-top: px;
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 57px;
-  letter-spacing: 0.2px;
-  color: #252b42;
-  flex: none;
-  order: 1;
   flex-grow: 0;
 }
 .about-card4 h2 {
   padding-top: 14px;
   padding-top: px;
-  font-family: "Montserrat", sans-serif;
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -535,47 +399,34 @@ ul li a:hover {
   order: 1;
   flex-grow: 0;
 }
-
 .advice-content h3 {
   text-align: start;
-  font-family: "Montserrat";
+  font-family: Montserrat;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
-  /* or 150% */
-
   letter-spacing: 0.1px;
-
-  /* text-color */
-
   color: #252b42;
-
-  /* Inside auto layout */
-
   padding-left: 29px;
+}
+.advice-content h2,
+.business-content h2 {
+  font-family: Montserrat;
+  font-style: normal;
+  letter-spacing: 0.2px;
 }
 .advice-content h2 {
   padding-bottom: 10px;
   text-align: center;
-  font-family: "Montserrat";
-  font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 57px;
-  /* identical to box height, or 142% */
-
-  letter-spacing: 0.2px;
-
-  /* text-color */
-
   color: #252b42;
-
-  /* Inside auto layout */
 }
 .advice-content p {
   text-align: center;
-  font-family: "Montserrat";
+  font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -583,7 +434,6 @@ ul li a:hover {
   color: #737373;
   padding-left: 29px;
 }
-
 .advice-cards {
   padding-top: 40px;
   padding-bottom: 101px;
@@ -592,7 +442,6 @@ ul li a:hover {
   flex-direction: row;
   justify-content: space-between;
 }
-
 .advice-card {
   text-align: start;
   display: flex;
@@ -600,10 +449,9 @@ ul li a:hover {
   justify-content: center;
   width: 230px;
   height: 321px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   transition: 0.6s;
 }
-
 .advice-card h3 {
   padding-top: 30px;
   padding-bottom: 15px;
@@ -612,60 +460,52 @@ ul li a:hover {
   text-align: start;
   padding-bottom: 30px;
 }
-
 .business-content h2 {
   text-align: center;
-  font-family: "Montserrat";
-  font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 57px;
-  letter-spacing: 0.2px;
   color: #252b42;
   flex: none;
   order: 0;
   flex-grow: 0;
 }
+.business-content .paragraph,
 .business-content p {
-  text-align: center;
-  font-family: "Montserrat";
+  font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
   line-height: 20px;
-  text-align: center;
-  letter-spacing: 0.2px;
-  color: #737373;
   flex: none;
   order: 1;
+  color: #737373;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+}
+.business-content p {
+  text-align: center;
   flex-grow: 0;
   padding-top: 10px;
 }
 .business-content .video {
-  padding-left: 0px;
+  padding-left: 0;
   padding-top: 100px;
 }
 .business-content .paragraph {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: 0.2px;
-  color: #737373;
-  flex: none;
-  order: 1;
   flex-grow: 0;
   text-align: start;
 }
-.business-content h3 {
-  font-family: "Montserrat";
+.business-content h3,
+.text-content .ppp {
+  color: #252b42;
+  font-family: Montserrat;
   font-style: normal;
+}
+.business-content h3 {
   font-weight: 700;
   font-size: 40px;
   line-height: 57px;
   letter-spacing: 0.2px;
-  color: #252b42;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -673,21 +513,26 @@ ul li a:hover {
   padding-top: 112px;
   padding-bottom: 10px;
 }
+#support,
+.contact-card:hover #support,
+.service-card p,
+.text-content .ppp {
+  letter-spacing: 0.1px;
+  font-weight: 700;
+}
 .text {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
-
-.hero {
+.hero,
+form {
   display: flex;
   flex-direction: row;
 }
-
 .video {
   position: relative;
   padding-left: 196px;
-  /* padding-right: 50px; */
   padding-bottom: 157px;
 }
 .btn-video {
@@ -698,30 +543,23 @@ ul li a:hover {
 .text-content {
   display: flex;
   justify-content: flex-end;
-  /* padding-left: 122.5px; */
   padding-top: 51px;
 }
 .text-content .ppp {
   text-align: start;
   display: inline-block;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 700;
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: 0.1px;
-  color: #252b42;
   flex: none;
   order: 0;
   flex-grow: 0;
   padding-left: 21px;
 }
-
+.footer-content,
 .imgs {
   display: flex;
   justify-content: space-between;
 }
-
 .service-card {
   margin-top: 70.1px;
   margin-bottom: 85px;
@@ -739,57 +577,43 @@ ul li a:hover {
   justify-content: space-between;
   padding: 0 10px;
 }
-
 form input {
   border: none;
   width: 333px;
-  /* padding-left: 3px; */
-  font-family: "Montserrat";
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 28px;
   letter-spacing: 0.2px;
   color: #737373;
 }
-
-form {
-  display: flex;
-  flex-direction: row;
-}
-
+.service-card p,
 form button {
-  border: none;
+  color: #fff;
+  font-family: Montserrat;
+  font-style: normal;
+}
+form button {
+  border: 1px solid #e6e6e6;
   height: 58px;
   width: 117px;
   background: #ffa62b;
-  border: 1px solid #e6e6e6;
-  border-radius: 0px 5px 5px 0px;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
+  border-radius: 0 5px 5px 0;
   font-size: 14px;
   line-height: 28px;
   text-align: center;
   letter-spacing: 0.2px;
-  color: #ffffff;
 }
 .service-card p {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 700;
   font-size: 24px;
   line-height: 32px;
-  letter-spacing: 0.1px;
-  color: #ffffff;
   flex: none;
   order: 0;
   flex-grow: 0;
 }
-
 .contact-content h2 {
   text-align: center;
-  font-family: "Montserrat";
+  font-family: Montserrat;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -803,8 +627,7 @@ form button {
   padding-bottom: 10px;
 }
 .contact-content p {
-  text-align: center;
-  font-family: "Montserrat";
+  font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -816,18 +639,29 @@ form button {
   order: 1;
   flex-grow: 0;
 }
+.contact-card a,
+.contact-card p,
+.contact-card:hover p {
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+}
 #ok {
   padding-bottom: 130px;
+}
+#example,
+#support,
+.card-image {
+  padding-bottom: 15px;
 }
 .contact {
   background-color: #f3f3f3;
 }
 .card-image {
   padding-top: 50px;
-  padding-bottom: 15px;
 }
 .contact-card {
-  background-color: #ffffff;
+  background-color: #fff;
   width: 328px;
   height: 333px;
   text-align: center;
@@ -837,88 +671,63 @@ form button {
   justify-content: space-between;
   padding-bottom: 208px;
 }
+#support,
+.contact-card a {
+  font-family: Montserrat;
+  font-style: normal;
+  line-height: 24px;
+  flex: none;
+  text-align: center;
+}
 .contact-card:hover {
-  background-color: #252b42ff;
-  width: 328px;
-  height: 333px;
   text-align: center;
   transition: 0.7s;
 }
 .contact-card:hover a {
-  background-color: #252b42ff;
-  width: 328px;
-  height: 333px;
   text-align: center;
   transition: 0.6s;
   color: #e6e6e6;
-  border: 1px solid #ffffff;
-}
-
-#example {
-  padding-bottom: 15px;
+  border: 1px solid #fff;
 }
 .contact-card p {
-  font-family: "Montserrat";
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
   line-height: 24px;
   text-align: center;
-  letter-spacing: 0.2px;
   color: #252b42;
 }
 .contact-card:hover p {
-  font-family: "Montserrat";
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
   line-height: 24px;
   text-align: center;
-  letter-spacing: 0.2px;
-  color: #ffffff;
+  color: #fff;
 }
 .contact-card a {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 24px;
-  text-align: center;
-  letter-spacing: 0.2px;
   color: #ffa62b;
-  flex: none;
   order: 0;
   flex-grow: 0;
-  text-decoration: none;
   border: 1px solid #ffa62b;
   border-radius: 5px;
   padding: 10px 20px;
 }
-
 #support {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 700;
   font-size: 16px;
-  line-height: 24px;
-  text-align: center;
-  letter-spacing: 0.1px;
   color: #252b42;
-  flex: none;
   order: 2;
   flex-grow: 0;
-  padding-bottom: 15px;
+}
+.contact-card:hover #support,
+.klas {
+  font-family: Montserrat;
+  font-style: normal;
+  line-height: 24px;
+  color: #fff;
+  flex: none;
 }
 .contact-card:hover #support {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 700;
   font-size: 16px;
-  line-height: 24px;
   text-align: center;
-  letter-spacing: 0.1px;
-  color: #ffffff;
-  flex: none;
   order: 2;
   flex-grow: 0;
   padding-bottom: 15px;
@@ -931,32 +740,21 @@ textarea {
   resize: none;
   padding-top: 12px;
   padding-left: 20px;
-  font-family: "Montserrat";
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  /* identical to box height, or 171% */
-
   display: flex;
   align-items: center;
   letter-spacing: 0.01em;
-
-  /* Gray 3 */
-
   color: #828282;
-
-  /* Inside auto layout */
-
   flex: none;
   order: 0;
   flex-grow: 0;
+  outline: 0;
 }
 select {
   margin-top: 10px;
-}
-#logos {
-  display: inline-block;
 }
 .form-content form input,
 select {
@@ -964,27 +762,23 @@ select {
   border: 1px solid #e0e0e0;
   width: 100%;
   height: 50px;
-  outline: none;
-}
-textarea {
-  outline: none;
+  outline: 0;
 }
 .btn-contact {
   border: 0;
   display: flex;
   justify-content: center;
-  font-family: "Montserrat";
+  font-family: Montserrat;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 28px;
   text-align: center;
   letter-spacing: 0.2px;
-  color: #ffffff;
+  color: #fff;
   flex: none;
   order: 0;
   flex-grow: 0;
-  text-decoration: none;
   padding: 15px 40px;
   margin-top: px;
   width: 163px;
@@ -992,104 +786,66 @@ textarea {
   background: #ffa62b;
   border-radius: 5px;
 }
-#btn {
+.footer .klas,
+.klas {
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.1px;
+  order: 0;
+}
+#btn,
+.klas {
   padding-top: 50px;
+}
+#btn {
   padding-bottom: 74px;
 }
 .form {
   height: 751px;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
 }
 .footer {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-
 .klas {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 24px;
-  /* identical to box height, or 150% */
-
-  letter-spacing: 0.1px;
-
-  /* light-text-color */
-
-  color: #ffffff;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 0;
   flex-grow: 0;
   padding-bottom: 20px;
-  padding-top: 50px;
 }
-#foot {
-  font-family: "Montserrat";
+#foot,
+.footer a {
+  flex: none;
+  font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 24px;
-  /* or 171% */
-
   letter-spacing: 0.2px;
-
-  /* light-text-color */
-
-  color: #ffffff;
-
-  /* Inside auto layout */
-
-  flex: none;
+  color: #fff;
+}
+#foot {
   order: 1;
   flex-grow: 0;
 }
-.foot-contact {
-  display: flex;
+.foot-contact,
+.footer-logo {
   flex-direction: row;
+  display: flex;
+}
+.foot-contact {
   padding-top: 13px;
 }
-
 .footer a {
-  text-decoration: none;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 24px;
-  /* identical to box height, or 171% */
-
-  letter-spacing: 0.2px;
-
-  /* light-text-color */
-
-  color: #ffffff;
-
-  /* Inside auto layout */
-
-  flex: none;
   order: 0;
   flex-grow: 0;
   padding-bottom: 10px;
 }
 .footer .klas {
-  font-family: "Montserrat";
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
   line-height: 24px;
-  letter-spacing: 0.1px;
-  color: #ffffff;
+  color: #fff;
   flex: none;
-  order: 0;
   flex-grow: 0;
 }
 footer {
@@ -1097,8 +853,6 @@ footer {
   height: 307px;
 }
 .footer-logo {
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
   background-color: #e0e0e0;
   margin-bottom: -50px;
@@ -1111,7 +865,7 @@ footer {
   align-items: center;
 }
 .footer-logo p {
-  font-family: "Montserrat";
+  font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -1130,12 +884,12 @@ footer {
   display: flex;
   justify-content: center;
   border-radius: 50%;
-  color: white;
+  color: #fff;
   bottom: 40px;
   right: 30px;
   position: fixed;
   height: 30px;
   width: 30px;
-  background-color: #ffffff;
+  background-color: #fff;
   box-shadow: 3px 3px 11px rgba(0, 0, 0, 0.2);
 }
