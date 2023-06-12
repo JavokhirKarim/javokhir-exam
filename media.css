@@ -113,7 +113,8 @@
   }
   .contact-cards {
     justify-content: space-between;
-    padding-bottom: 208px;
+    padding-bottom: 50px;
+    gap: 60px;
   }
   .buttons,
   .service-card {
