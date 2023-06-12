@@ -166,8 +166,9 @@
   .footer-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-between;
+    padding-left: 95px;
   }
   footer {
     height: 1200px;
@@ -206,5 +207,9 @@
   .home {
     background: url(./img/backround222.png) 0 0 / cover no-repeat;
     height: 710px;
+  }
+  .footer-logo .container {
+    display: flex;
+    flex-direction: column;
   }
 }
